@@ -1,10 +1,13 @@
-package com.parthib.taskstation;
+package com.parthib.taskstation.Database;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
+import com.parthib.taskstation.Model.Tasks;
+import com.parthib.taskstation.Dao.Tasks_Dao;
 
 @Database(entities = {Tasks.class}, version = 1)
 public abstract class Tasks_Database extends RoomDatabase {

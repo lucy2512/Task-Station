@@ -1,4 +1,4 @@
-package com.parthib.taskstation.Model.Repository;
+package com.parthib.taskstation.Repository;
 
 import android.app.Application;
 
@@ -22,15 +22,18 @@ public class Tasks_Repository {
         getAllTasks = tasks_dao.getAllTasks();
     }
 
-    void insertTasks(Tasks tasks){
+    public void insertTasks(Tasks tasks){
+
         tasks_dao.insertTasks(tasks);
     }
 
-    void deleteTasks(int id){
+    public void deleteTasks(int id){
+
         tasks_dao.deleteTasks(id);
     }
 
-    void updateTasks(Tasks tasks){
+    public void updateTasks(Tasks tasks){
+
         tasks_dao.updateTasks(tasks);
     }
 }
