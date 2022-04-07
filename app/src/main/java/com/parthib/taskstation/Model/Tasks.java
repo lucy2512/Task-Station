@@ -10,18 +10,18 @@ public class Tasks {
     public int id;
 
     @ColumnInfo(name = "tasks_title")
-    String tasks_title;
+    public String tasksTitle;
 
     @ColumnInfo(name = "tasks_subtitle")
-    String tasks_subtitle;
+    public String tasksSubtitle;
 
     @ColumnInfo(name = "tasks_data")
-    String tasks_data;
+    public String tasksData;
 
     @ColumnInfo(name = "tasks_date")
-    String tasks_date;
+    public String tasksDate;
 
-    @ColumnInfo(name = "tasks_title")
-    String tasks_priority;
+    @ColumnInfo(name = "tasks_priority")
+    public String tasksPriority;
 
 }
