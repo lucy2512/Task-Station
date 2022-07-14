@@ -21,14 +21,14 @@ public class Tasks_ViewModel extends AndroidViewModel {
         repository = new Tasks_Repository(application);
         getAllTasks = repository.getAllTasks;
     }
-    void insertTask(Tasks tasks){
+    public void insertTask(Tasks tasks){
         repository.insertTasks(tasks);
     }
-    void deleteTask(int id){
+    public void deleteTask(int id){
         repository.deleteTasks(id);
     }
 
-    void updateTask(Tasks tasks){
+    public void updateTask(Tasks tasks){
         repository.updateTasks(tasks);
     }
 }

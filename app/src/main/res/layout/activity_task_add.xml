@@ -19,6 +19,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/tasktitle"
         android:hint="Tittle"
         android:fontFamily="@font/product_sans_regular"
         android:padding="15dp"
@@ -32,6 +33,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/tasksubtitle"
         android:hint="Sub-Tittle"
         android:fontFamily="@font/product_sans_regular"
         android:padding="15dp"
@@ -65,16 +67,19 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
+            android:id="@+id/redP"
             android:background="@drawable/redball"/>
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
+            android:id="@+id/yellowP"
             android:background="@drawable/yellowball"/>
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="10dp"
+            android:id="@+id/greenP"
             android:src="@drawable/ic_baseline_done_24"
             android:background="@drawable/greenball"/>
 
@@ -89,6 +94,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:id="@+id/Tasksdata"
         android:hint="Notes"
         android:fontFamily="@font/product_sans_regular"
         android:gravity="start"

@@ -19,7 +19,7 @@ public abstract class Tasks_Database extends RoomDatabase {
     public static Tasks_Database getDBInstance(Context context){
 
         if(INSTANCE==null){
-            INSTANCE= Room.databaseBuilder(context.getApplicationContext(),Tasks_Database.class,"Tasks_DB").build();
+            INSTANCE= Room.databaseBuilder(context.getApplicationContext(),Tasks_Database.class,"Tasks_DB").allowMainThreadQueries().build();
         }
         return INSTANCE;
     }
